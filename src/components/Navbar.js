@@ -9,12 +9,15 @@ export default () => {
   const { dark, toggleDark, toString } = useContext(ThemeContext)
   return (
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
-      <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
-        <FontAwesomeIcon
-          icon={["fab", `${dark ? "empire" : "rebel"}`]}
-          className={`brand-icon ${dark ? "empire" : "rebel"}`}
+      <Navbar.Brand className="pl-5 ml-5" as={Link} to="/"
+        title="Home"
+      >
+        {/* <FontAwesomeIcon
+          icon={["fab", `${dark ? "empire" : "themeco"}`]}
+          className={`brand-icon ${dark ? "empire" : "themeco"}`}
           title="Home"
-        />
+        /> */}
+          home
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse
@@ -22,17 +25,17 @@ export default () => {
         className="justify-content-end"
       >
         <Nav className="pr-3 mr-4 nav-links">
-          <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
+          {/* <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
             Blog
-          </Nav.Link>
+          </Nav.Link> */}
           <Nav.Link className="ml-2" as={Link} to="/about" title="About">
-            About
+            about
           </Nav.Link>
           <Nav.Link className="ml-2" as={Link} to="/projects" title="Projects">
-            Projects
+            projects
           </Nav.Link>
           <Nav.Link className="ml-2" as={Link} to="/resume" title="Resume">
-            Resume
+            resume
           </Nav.Link>
           <Form className="ml-3 my-auto">
             <Form.Check

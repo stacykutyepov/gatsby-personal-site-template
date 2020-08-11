@@ -36,17 +36,17 @@ $themes: (
     linkHover: $gray-200,
     textColor: $gray-300,
     firstName: $gray-100,
-    lastName: $empire-red,
+    lastName: orange,
     titleColor: $white,
     hrefColor: $faded-red,
     themeColor: $dark-red,
     heartColor: red,
-    github: $empire-red,
-    linkedin: $empire-red,
-    fcc: $empire-red,
-    hr: $empire-red,
-    mail: $empire-red,
-    file: $empire-red,
+    github: orange,
+    linkedin: orange,
+    fcc: orange,
+    hr: orange,
+    mail: orange,
+    file: orange,
     iconBackground: $black,
     cardBackground: $dark-gray,
   ),
@@ -124,6 +124,7 @@ $themes: (
 .watch-list-title {
   @include themify($themes) {
     color: themed("secondary");
+    text-align: left;
   }
 }
 

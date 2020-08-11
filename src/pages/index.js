@@ -8,23 +8,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default ({ data }) => {
   const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata
-  const { dark } = useContext(ThemeContext)
+  // const { dark } = useContext(ThemeContext)
   return (
     <PageLayout>
       <SEO title="Home" />
       <Container className="text-center pt-5 mt-5" fluid>
         <Image
-          width="150"
-          height="150"
+          width="200"
+          height="200"
+          roundedCircle
           fluid
-          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
-          alt={dark ? "Darth Vader" : "R2-D2"}
+          src={`../../icons/stacy.jpg`}
+          alt={"front-end developer with laptop"}
         />
-        {unemployed && (
-          <p className="mt-2">
-            <b> Hey! I am looking for new opportunities :)</b>
-          </p>
-        )}
+
         <Container className="py-0 my-0">
           <h1
             style={{
@@ -35,17 +32,27 @@ export default ({ data }) => {
             <span className="first-name">{firstName}</span>&nbsp;
             <span className="last-name">{lastName}</span>
           </h1>
+          {unemployed && (
+            <p className="mt-2">
+              <b> Hello! I am actively looking for new life-changing opportunities :)</b>
+            </p>
+          )}
           <p>
             <i>
-              {occupation} by day,&nbsp;
-              {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
+              {occupation} focused on Front-End Development, &nbsp;
             </i>
+            <p>
+              <i>
+
+                I'm self-motivated and well organized person, quick thinking and eager to learn.
+              </i>
+            </p>
           </p>
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
           <a
-            href="https://www.github.com"
+            href="https://www.github.com/codemyjourney"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,7 +63,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/stacy-kutyepov/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -66,28 +73,7 @@ export default ({ data }) => {
               title="LinkedIn"
             />
           </a>
-          <a
-            href="https://www.freecodecamp.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "free-code-camp"]}
-              className="icons fcc"
-              title="FreeCodeCamp"
-            />
-          </a>
-          <a
-            href="https://www.hackerrank.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "hackerrank"]}
-              className="icons hr"
-              title="Hackerrank"
-            />
-          </a>
+
           <a
             href="mailto:johndoe@gmail.com"
             target="_blank"
@@ -99,11 +85,22 @@ export default ({ data }) => {
               title="e-mail"
             />
           </a>
-          <a href="../../resume.pdf" target="_blank" download>
+          <a
+            href="https://medium.com/@codemyjourney"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "medium"]}
+              className="icons linkedin"
+              title="Medium"
+            />
+          </a>
+          <a href="../../resume-stacy-k.pdf" target="_blank" download>
             <FontAwesomeIcon
               icon={["fas", "file-alt"]}
               className="icons file"
-              title="Resume"
+              title="Resume Stacy K."
             />
           </a>
         </div>

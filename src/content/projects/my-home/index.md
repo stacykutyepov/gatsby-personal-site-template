@@ -1,18 +1,14 @@
 ---
 title: "My Home"
 tags: ["React", "Redux", "styled-components", "Firebase", "Firestore", "Stripe API" ]
-date: "2020-05-13"
-deployLink: "https://intercamp.herokuapp.com/"
-gitHubLink: "https://github.com/codemyjourney/InterCamp"
+date: "2020-07-13"
+websiteLink: "https://my-ehome.herokuapp.com/"
+githubLink: "https://github.com/codemyjourney/my-home"
 ---
 
-<image width="100%" src="https://user-images.githubusercontent.com/62475313/88083853-8ad18d80-cb51-11ea-955a-a153ec0fd288.png" frameborder="0" ></image>
+**Myhome is a functional, responsive E-commerce Website created with React, Redux and Firebase.**
 
 
-### Overview and Goals
-Myhome is a functional, responsive E-commerce Website created with React & Redux and Firebase.
-
-___
 #### React & Redux.:
 Use Redux for state management.
 
@@ -32,6 +28,11 @@ Sign-In workflow with Firebase.
 Google Sign-in Authentification.
 
 Storing User Data In Firebase.
+___
+
+
+<image width="100%" src="https://user-images.githubusercontent.com/62475313/88083853-8ad18d80-cb51-11ea-955a-a153ec0fd288.png" frameborder="0" ></image>
+
 ___
 
 **Checkout Page**

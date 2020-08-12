@@ -16,18 +16,23 @@ export default ({ data }) => {
       <PageTitle title="Projects" />
       <Container className="text-left">
         <section>
-          {allProjects.map(({ node }) => (
-            <div key={node.id} className="pt-3 pr-5 pl-5">
-              <ProjectLink
-                to={node.fields.slug}
-                featuredImages={featuredImageMap[node.fields.slug]}
-                title={node.frontmatter.title}
-                tags={node.frontmatter.tags}
-                excerpt={node.excerpt}
-              />
-              <hr />
-            </div>
-          ))}
+          {allProjects.map(({ node }) => {
+            // debugger
+            return (
+              <div key={node.id} className="pt-3 pr-5 pl-5">
+                <ProjectLink
+                  to={node.fields.slug}
+                  featuredImages={featuredImageMap[node.fields.slug]}
+                  title={node.frontmatter.title}
+                  tags={node.frontmatter.tags}
+                  excerpt={node.excerpt}
+                  website={node.frontmatter.websiteLink}
+                  github={node.frontmatter.githubLink}
+                />
+                <hr />
+              </div>
+            )
+          })}
         </section>
       </Container>
     </PageLayout>
@@ -50,6 +55,8 @@ export const query = graphql`
             description
             tags
             date(formatString: "DD MMMM, YYYY")
+            websiteLink
+            githubLink
           }
           fields {
             slug

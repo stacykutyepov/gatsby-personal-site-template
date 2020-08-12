@@ -1,8 +1,8 @@
-import React, { useContext } from "react"
+import React from "react"
 import { PageLayout, PageTitle } from "../components"
 import { Container, Image } from "react-bootstrap"
 import { Link, graphql } from "gatsby"
-import { ThemeContext, SEO } from "../utils"
+import { SEO } from "../utils"
 
 export default ({ data }) => {
   const MediaLink = ({ title, author, link }) => (
@@ -50,10 +50,16 @@ export default ({ data }) => {
             ))}
           </p>
           <div className="mt-4 pt-2">
-            Hello there! My name is <b>{`${author}`}</b>. I am a&nbsp;
-            <b>{occupation}</b> focused on Front-End Development. I used FreeCodeCamp and Udemy Couses to get started, then applied my knowledge to build my own projects.
+            <p>
+              Hello there! My name is <b>{`${author}`}</b>. I am a
+            <b> {occupation}</b> focused on Front-End Development. I used <Link to="/resume">FreeCodeCamp</Link> and <Link to="/resume">Udemy Couses</Link> to get started, then applied my knowledge to build my own projects.
             <br />
-            <p className="mt-4 pt-2">
+              I am a social person and have great communication skills. I take initiative in difficut situations, and I always stive to implove the product and bring new ideas.
+            </p>
+            <p>
+              In my spare time, I like to read books, think about what I'd like to build next and travel.
+            </p>
+            <p className="pt-2">
               <h4>Skills:</h4>
               <div>
                 <b>Front-end:</b> JavaScript, HTML5, CSS3
@@ -66,11 +72,8 @@ export default ({ data }) => {
               </div>
             </p>
           </div>
-          <p>
-            In my spare time, I like to read books, think about what I'd like to build next and travel.
-          </p>
           <p >
-            Check out my personal <Link to="/projects">projects</Link> to see what I've
+            Check out my <Link to="/projects">personal projects</Link> to see what I've
             been up to!
             {/* Or check out my <Link to="/blog">blog</Link> to see
             what's recently caught my eye! */}

@@ -1,6 +1,6 @@
-import React, { useContext } from "react"
+import React from "react"
 import { graphql } from "gatsby"
-import ThemeContext from "../utils/theme"
+// import ThemeContext from "../utils/theme"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
 import { Container, Image } from "react-bootstrap"
@@ -75,7 +75,7 @@ export default ({ data }) => {
           </a>
 
           <a
-            href="mailto:johndoe@gmail.com"
+            href="mailto:s.karlinska@hotmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -92,7 +92,7 @@ export default ({ data }) => {
           >
             <FontAwesomeIcon
               icon={["fab", "medium"]}
-              className="icons linkedin"
+              className="icons github"
               title="Medium"
             />
           </a>

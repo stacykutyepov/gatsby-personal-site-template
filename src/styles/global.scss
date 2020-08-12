@@ -65,7 +65,7 @@ body {
 // dark mode
 .custom-control-input:checked ~ .custom-control-label::before {
   border-color: $black;
-  background-color: $black;
+  background-color: $gray-900;
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
